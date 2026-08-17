@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Request a Private Consultation — Holland &amp; Gray</title>
+<meta name="description" content="Request a private, no-obligation consultation regarding the management of your residence.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Jost:wght@200;300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+
+<header class="site-head">
+  <div class="wrap head-inner">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">HOLLAND &amp; GRAY</span>
+      <span class="brand-sub">Private Estate Management</span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="membership.html">Services &amp; Membership</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" aria-current="page">Consultation</a>
+      <a class="nav-portal" href="portal/index.html">Client Portal</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+
+  <section class="page-head">
+    <div class="wrap split">
+      <div><p class="eyebrow" data-reveal>Private consultation</p></div>
+      <div>
+        <h1 data-reveal="1">Tell us about the residence.</h1>
+        <p class="lede" style="margin-top:1.8rem;max-width:52ch" data-reveal="2">
+          We will reply within one business day to arrange a conversation at a time that suits you —
+          by telephone, or at the property.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--paper" style="padding-top:clamp(2rem,5vh,3rem)">
+    <div class="wrap split">
+
+      <aside data-reveal>
+        <h4 style="font-family:var(--ff-body);font-size:.66rem;letter-spacing:.26em;text-transform:uppercase;color:var(--ink-mute);margin-bottom:1.2rem">What happens next</h4>
+        <ol style="list-style:none;padding:0;margin:0;font-size:.92rem;color:var(--ink-soft)">
+          <li style="padding-block:.9rem;border-top:1px solid var(--line-soft)"><span style="color:var(--brass);margin-right:.7rem">01</span>We acknowledge your enquiry within one business day.</li>
+          <li style="padding-block:.9rem;border-top:1px solid var(--line-soft)"><span style="color:var(--brass);margin-right:.7rem">02</span>A private conversation, at your convenience.</li>
+          <li style="padding-block:.9rem;border-top:1px solid var(--line-soft)"><span style="color:var(--brass);margin-right:.7rem">03</span>A walk of the property, if appropriate.</li>
+          <li style="padding-block:.9rem;border-top:1px solid var(--line-soft);border-bottom:1px solid var(--line-soft)"><span style="color:var(--brass);margin-right:.7rem">04</span>A written proposal and terms.</li>
+        </ol>
+        <p class="form-note" style="margin-top:1.6rem">
+          Your enquiry is treated in confidence and is never shared. We do not operate a call centre and
+          we do not cold-call.
+        </p>
+      </aside>
+
+      <form data-consult-form novalidate>
+        <div data-form-body>
+          <div class="form-grid">
+            <div class="field">
+              <label for="first">First name</label>
+              <input id="first" name="first" type="text" autocomplete="given-name" required>
+            </div>
+            <div class="field">
+              <label for="last">Surname</label>
+              <input id="last" name="last" type="text" autocomplete="family-name" required>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" required>
+            </div>
+            <div class="field">
+              <label for="phone">Telephone</label>
+              <input id="phone" name="phone" type="tel" autocomplete="tel">
+            </div>
+            <div class="field">
+              <label for="suburb">Property suburb</label>
+              <input id="suburb" name="suburb" type="text" placeholder="e.g. Toorak">
+            </div>
+            <div class="field">
+              <label for="type">Property type</label>
+              <select id="type" name="type">
+                <option>Principal residence</option>
+                <option>Second home / holiday residence</option>
+                <option>Multiple properties</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="level">Membership of interest</label>
+              <select id="level" name="level">
+                <option>Not yet certain</option>
+                <option>Level I — Residence</option>
+                <option>Level II — Estate</option>
+                <option>Level III — Private Office</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="contact-pref">Preferred contact</label>
+              <select id="contact-pref" name="contact-pref">
+                <option>Email</option>
+                <option>Telephone</option>
+                <option>Either</option>
+              </select>
+            </div>
+            <div class="field field--full">
+              <label for="notes">How may we assist?</label>
+              <textarea id="notes" name="notes" placeholder="A brief note on the residence and what you would like managed."></textarea>
+            </div>
+          </div>
+
+          <p class="form-note" style="margin-top:1.8rem">
+            By submitting this enquiry you agree to our <a href="terms.html" style="color:var(--brass)">Terms</a> and
+            <a href="terms.html#privacy" style="color:var(--brass)">Privacy Policy</a>.
+          </p>
+
+          <button class="btn" type="submit" style="margin-top:1.6rem"><span>Request a Private Consultation</span></button>
+        </div>
+
+        <div data-form-done hidden style="border:1px solid var(--line);padding:clamp(1.8rem,4vw,3rem);background:var(--paper)">
+          <p class="eyebrow">Received</p>
+          <h2 style="font-size:var(--step-2);max-width:20ch">Thank you. Your enquiry is with us.</h2>
+          <p style="margin-top:1.2rem;color:var(--ink-mute);max-width:44ch">
+            A director will be in touch within one business day. Nothing further is required from you.
+          </p>
+          <p class="form-note" style="margin-top:1.4rem">Demo only — no data is sent or stored.</p>
+        </div>
+      </form>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <span class="brand-mark">HOLLAND &amp; GRAY</span>
+        <p>Private estate management for a small number of Melbourne residences. By introduction and membership.</p>
+      </div>
+      <div>
+        <h4>Site</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="membership.html">Services &amp; Membership</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Consultation</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Client</h4>
+        <ul>
+          <li><a href="portal/index.html">Client Portal</a></li>
+          <li><a href="terms.html">Terms of Service</a></li>
+          <li><a href="terms.html#privacy">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Enquiries</h4>
+        <ul>
+          <li><a href="contact.html">Private consultation</a></li>
+          <li><span style="font-size:.92rem">Melbourne, Victoria</span></li>
+          <li><span style="font-size:.92rem">By appointment only</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-base">
+      <span>© <span data-year>2026</span> Holland &amp; Gray. All rights reserved.</span>
+      <span>Demo build — placeholder brand &amp; copy</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/site.js"></script>
+</body>
+</html>

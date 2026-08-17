@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Client Portal — Holland &amp; Gray</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Jost:wght@200;300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/portal.css">
+</head>
+<body>
+
+<div class="login">
+
+  <aside class="login-aside">
+    <a href="../index.html" style="text-decoration:none;position:relative;z-index:1">
+      <span class="mark">HOLLAND &amp; GRAY</span>
+      <span class="sub">Private Estate Management</span>
+    </a>
+    <blockquote>Your residence, held to standard.</blockquote>
+    <p class="foot">Melbourne · Members only · Confidential</p>
+  </aside>
+
+  <main class="login-main">
+    <form class="login-card" data-login novalidate>
+      <p class="u-tiny" style="margin-bottom:1rem">Private Client Portal</p>
+      <h1>Sign in</h1>
+      <p class="hint" style="margin-bottom:1.8rem">Access is restricted to members and persons nominated in writing.</p>
+
+      <div class="field">
+        <label for="email">Email address</label>
+        <input id="email" name="email" type="email" value="c.whitfield@example.com" autocomplete="username">
+      </div>
+      <div class="field">
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password" value="demo-access" autocomplete="current-password">
+      </div>
+
+      <button class="b b--solid" type="submit" style="width:100%"><span>Enter the portal</span></button>
+
+      <div class="login-links">
+        <a href="#">Forgotten password</a>
+        <a href="../contact.html">Request access</a>
+      </div>
+
+      <p class="demo-note" style="margin-top:2rem">
+        Demonstration build — credentials are pre-filled and no data leaves this page.
+        In the live portal this screen is protected by password hashing, rate limiting,
+        session expiry and optional two-factor authentication.
+      </p>
+    </form>
+  </main>
+
+</div>
+
+<script src="../assets/portal.js"></script>
+</body>
+</html>

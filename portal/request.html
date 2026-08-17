@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HG-2026-117 — Holland &amp; Gray Portal</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Jost:wght@200;300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/portal.css">
+</head>
+<body>
+
+<div class="shell">
+
+  <aside class="rail">
+    <a class="rail-brand" href="dashboard.html">
+      <span class="mark">HOLLAND &amp; GRAY</span>
+      <span class="sub">Private Client Portal</span>
+    </a>
+    <div class="rail-group">
+      <h4>Estate</h4>
+      <nav>
+        <a href="dashboard.html">Estate Overview</a>
+        <a href="property.html">Property Information</a>
+        <a href="history.html">Maintenance History</a>
+      </nav>
+    </div>
+    <div class="rail-group">
+      <h4>Service</h4>
+      <nav>
+        <a href="requests.html">Service Requests <span class="rail-count">4</span></a>
+        <a href="request.html" aria-current="page">Quotes &amp; Approvals <span class="rail-count">1</span></a>
+        <a href="documents.html">Documents &amp; Records</a>
+        <a href="messages.html">Messages <span class="rail-count">2</span></a>
+      </nav>
+    </div>
+    <div class="rail-foot">
+      <p class="u-tiny" style="color:rgba(243,240,234,.34);margin-bottom:.8rem">Your estate manager</p>
+      <div class="rail-manager">
+        <span class="avatar">TA</span>
+        <span><strong>Thomas Ashby</strong><span>Level II · Estate</span></span>
+      </div>
+      <p style="margin-top:1.1rem"><a href="index.html" style="font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:rgba(243,240,234,.45);text-decoration:none">Sign out</a></p>
+    </div>
+  </aside>
+
+  <div class="main">
+
+    <div class="topbar">
+      <div style="display:flex;align-items:center;gap:1rem">
+        <button class="rail-toggle" aria-label="Menu"><span></span><span></span></button>
+        <div class="topbar-title">
+          <h1>Roof &amp; gutter works — east wing</h1>
+          <p>HG-2026-117 · Raised 6 August 2026 · Exterior</p>
+        </div>
+      </div>
+      <div class="topbar-actions">
+        <a class="b b--ghost" href="requests.html"><span>Back to requests</span></a>
+      </div>
+    </div>
+
+    <div class="content">
+
+      <!-- status tracker -->
+      <section class="panel">
+        <div class="panel-body">
+          <ol class="track">
+            <li class="done">New <span>6 Aug · received</span></li>
+            <li class="done">In Progress <span>7 Aug · assessed on site</span></li>
+            <li class="done now">Awaiting Approval <span>11 Aug · quote with you</span></li>
+            <li>Scheduled <span>Date confirmed after approval</span></li>
+            <li>Completed <span>Signed off &amp; recorded</span></li>
+          </ol>
+        </div>
+      </section>
+
+      <div class="grid grid--main">
+
+        <div style="display:grid;gap:clamp(.9rem,1.6vw,1.4rem)">
+
+          <!-- the quote -->
+          <section class="panel quote-card" data-quote>
+            <div class="panel-head">
+              <h2>Quotation for your approval</h2>
+              <span class="chip chip--approval" data-quote-state>Awaiting approval</span>
+            </div>
+            <div class="panel-body">
+              <div class="defs" style="margin-bottom:1.2rem">
+                <div><dt>Contractor</dt><dd>Ellerman Roofing Pty Ltd · licensed &amp; insured · used by us since 2021</dd></div>
+                <div><dt>Issued</dt><dd>11 August 2026 · valid 30 days</dd></div>
+                <div><dt>Recommendation</dt><dd>Proceed before spring rain. Not urgent this week.</dd></div>
+              </div>
+
+              <table class="quote-lines">
+                <thead><tr><th>Item</th><th class="num">Amount</th></tr></thead>
+                <tbody>
+                  <tr><td>Remove and replace 14m of corroded box gutter, east elevation</td><td class="num">$2,640.00</td></tr>
+                  <tr><td>Re-bed and point ridge capping, east wing</td><td class="num">$980.00</td></tr>
+                  <tr><td>Supply and install leaf guard to east and north runs</td><td class="num">$620.00</td></tr>
+                  <tr><td>Access equipment and site protection</td><td class="num">$180.00</td></tr>
+                  <tr><td>Estate management supervision and sign-off</td><td class="num">$0.00 <span class="u-mute" style="font-size:.72rem">(included)</span></td></tr>
+                </tbody>
+              </table>
+
+              <div class="quote-total">
+                <div>
+                  <span class="u-tiny" style="display:block">Total including GST</span>
+                  <span class="u-mute" style="font-size:.78rem">Subtotal $4,420.00 · GST $440.00</span>
+                </div>
+                <span class="amount">$4,860.00</span>
+              </div>
+
+              <div class="decision-bar">
+                <button class="b b--brass" data-approve><span>Approve quote</span></button>
+                <button class="b b--danger" data-decline><span>Decline</span></button>
+                <a class="b b--ghost" href="messages.html"><span>Ask a question first</span></a>
+              </div>
+
+              <div data-quote-outcome hidden style="margin-top:1.2rem;padding-top:1.2rem;border-top:1px solid rgba(154,123,79,.28)"></div>
+
+              <p class="demo-note" style="margin-top:1.2rem">
+                Try it — approving or declining updates the status, records the decision and
+                advances the tracker above.
+              </p>
+            </div>
+          </section>
+
+          <!-- description -->
+          <section class="panel">
+            <div class="panel-head"><h2>Request detail</h2></div>
+            <div class="panel-body">
+              <p class="u-mute" style="font-size:.92rem">
+                Noted at the 4 August inspection: the east box gutter shows advanced corrosion at two
+                joins with staining to the render below. Ridge capping along the same elevation has
+                lifted in three places. No water ingress to the interior at this stage.
+              </p>
+              <div class="defs" style="margin-top:1rem">
+                <div><dt>Raised by</dt><dd>Thomas Ashby, Estate Manager (inspection finding)</dd></div>
+                <div><dt>Priority</dt><dd>Soon — before the spring rain</dd></div>
+                <div><dt>Access</dt><dd>Side gate; no attendance required from you</dd></div>
+              </div>
+
+              <h3 style="font-size:1rem;margin-top:1.6rem;margin-bottom:.8rem">Inspection photographs</h3>
+              <div class="gallery">
+                <figure><div class="ph">East gutter</div><figcaption>Corrosion at join · 4 Aug</figcaption></figure>
+                <figure><div class="ph">Ridge line</div><figcaption>Lifted capping · 4 Aug</figcaption></figure>
+                <figure><div class="ph">Render</div><figcaption>Staining below · 4 Aug</figcaption></figure>
+                <figure><div class="ph">Roof plan</div><figcaption>Marked-up extent</figcaption></figure>
+              </div>
+            </div>
+          </section>
+
+          <!-- uploads -->
+          <section class="panel">
+            <div class="panel-head"><h2>Your attachments</h2></div>
+            <div class="panel-body">
+              <div class="drop" data-drop data-drop-list="#req-files">
+                <strong>Add a photograph or document</strong><br>
+                <span style="font-size:.78rem">Drop a file here, or click to browse</span>
+                <input type="file" multiple hidden>
+              </div>
+              <ul class="files" id="req-files">
+                <li>
+                  <span class="file-ico" data-ext="PDF"></span>
+                  <span><span style="display:block">Original roof warranty — 2019.pdf</span>
+                  <span class="file-meta">Added by you · 7 August 2026 · 420 KB</span></span>
+                </li>
+              </ul>
+            </div>
+          </section>
+
+        </div>
+
+        <!-- activity + parties -->
+        <div style="display:grid;gap:clamp(.9rem,1.6vw,1.4rem)">
+
+          <section class="panel">
+            <div class="panel-head"><h2>Activity</h2></div>
+            <div class="panel-body">
+              <ul class="timeline">
+                <li class="is-key">
+                  <time>11 Aug · 4:12pm</time>
+                  <strong>Quote issued for approval</strong>
+                  <p>$4,860.00 incl. GST · Ellerman Roofing</p>
+                </li>
+                <li>
+                  <time>11 Aug · 9:40am</time>
+                  <strong>Second quotation received</strong>
+                  <p>Higher and excluded leaf guards — not recommended</p>
+                </li>
+                <li>
+                  <time>8 Aug · 2:05pm</time>
+                  <strong>Contractor attended</strong>
+                  <p>Ellerman Roofing · measured and photographed</p>
+                </li>
+                <li>
+                  <time>7 Aug · 11:20am</time>
+                  <strong>Assessed by estate manager</strong>
+                  <p>Two quotations requested</p>
+                </li>
+                <li>
+                  <time>6 Aug · 8:15am</time>
+                  <strong>Request raised</strong>
+                  <p>From the 4 August inspection finding</p>
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <section class="panel">
+            <div class="panel-head"><h2>Handled by</h2></div>
+            <div class="panel-body">
+              <div class="rail-manager" style="color:var(--ink)">
+                <span class="avatar" style="background:linear-gradient(150deg,#E4DDCE,#CFC5B2);color:#6E685D">TA</span>
+                <span>
+                  <strong style="display:block;font-weight:400">Thomas Ashby</strong>
+                  <span class="u-tiny">Senior Estate Manager</span>
+                </span>
+              </div>
+              <a class="b b--ghost" href="messages.html" style="width:100%;margin-top:1.1rem"><span>Send a message</span></a>
+            </div>
+          </section>
+
+          <section class="panel">
+            <div class="panel-head"><h2>Related records</h2></div>
+            <div class="panel-body">
+              <ul class="files">
+                <li><span class="file-ico" data-ext="PDF"></span><span><span style="display:block">Inspection report — 4 August 2026</span><span class="file-meta">Issued by Holland &amp; Gray</span></span></li>
+                <li><span class="file-ico" data-ext="PDF"></span><span><span style="display:block">Ellerman Roofing — quotation</span><span class="file-meta">11 August 2026 · 210 KB</span></span></li>
+                <li><span class="file-ico" data-ext="PDF"></span><span><span style="display:block">Contractor insurance certificate</span><span class="file-meta">Valid to 31 March 2027</span></span></li>
+              </ul>
+            </div>
+          </section>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="../assets/portal.js"></script>
+</body>
+</html>

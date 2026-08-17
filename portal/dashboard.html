@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Estate Overview — Holland &amp; Gray Portal</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Jost:wght@200;300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/portal.css">
+</head>
+<body>
+
+<div class="shell">
+
+  <aside class="rail">
+    <a class="rail-brand" href="dashboard.html">
+      <span class="mark">HOLLAND &amp; GRAY</span>
+      <span class="sub">Private Client Portal</span>
+    </a>
+
+    <div class="rail-group">
+      <h4>Estate</h4>
+      <nav>
+        <a href="dashboard.html" aria-current="page">Estate Overview</a>
+        <a href="property.html">Property Information</a>
+        <a href="history.html">Maintenance History</a>
+      </nav>
+    </div>
+
+    <div class="rail-group">
+      <h4>Service</h4>
+      <nav>
+        <a href="requests.html">Service Requests <span class="rail-count">4</span></a>
+        <a href="request.html">Quotes &amp; Approvals <span class="rail-count">1</span></a>
+        <a href="documents.html">Documents &amp; Records</a>
+        <a href="messages.html">Messages <span class="rail-count">2</span></a>
+      </nav>
+    </div>
+
+    <div class="rail-foot">
+      <p class="u-tiny" style="color:rgba(243,240,234,.34);margin-bottom:.8rem">Your estate manager</p>
+      <div class="rail-manager">
+        <span class="avatar">TA</span>
+        <span>
+          <strong>Thomas Ashby</strong>
+          <span>Level II · Estate</span>
+        </span>
+      </div>
+      <p style="margin-top:1.1rem"><a href="index.html" style="font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:rgba(243,240,234,.45);text-decoration:none">Sign out</a></p>
+    </div>
+  </aside>
+
+  <div class="main">
+
+    <div class="topbar">
+      <div style="display:flex;align-items:center;gap:1rem">
+        <button class="rail-toggle" aria-label="Menu"><span></span><span></span></button>
+        <div class="topbar-title">
+          <h1>Good afternoon, Mrs Whitfield</h1>
+          <p>Wednesday, 12 August 2026 · Melbourne</p>
+        </div>
+      </div>
+      <div class="topbar-actions">
+        <a class="b b--ghost" href="messages.html"><span>Message manager</span></a>
+        <button class="b b--solid" data-modal-open="new-request"><span>New request</span></button>
+      </div>
+    </div>
+
+    <div class="content">
+
+      <!-- residence header -->
+      <section class="hero-prop">
+        <div>
+          <p class="u-tiny">Principal residence · Level II Membership</p>
+          <h2>18 Lansell Road, Toorak</h2>
+          <p class="u-mute" style="margin-top:.5rem;font-size:.88rem">
+            Last inspection 4 August 2026 · Next scheduled 1 September 2026 · Condition: good
+          </p>
+        </div>
+      </section>
+
+      <!-- stats -->
+      <dl class="grid grid--4" style="margin:0">
+        <div class="stat">
+          <dt>Open requests</dt>
+          <dd>4</dd>
+          <span class="stat-note">2 in progress, 1 scheduled</span>
+        </div>
+        <div class="stat stat--attention">
+          <dt>Awaiting your approval</dt>
+          <dd>1</dd>
+          <span class="stat-note">Roof &amp; gutter works — quote issued 11 Aug</span>
+        </div>
+        <div class="stat">
+          <dt>Next attendance</dt>
+          <dd>19 Aug</dd>
+          <span class="stat-note">Pool plant service · 8:30am–10:00am</span>
+        </div>
+        <div class="stat">
+          <dt>Documents on file</dt>
+          <dd>12</dd>
+          <span class="stat-note">Warranties, certificates, reports</span>
+        </div>
+      </dl>
+
+      <div class="grid grid--main">
+
+        <!-- open requests -->
+        <section class="panel">
+          <div class="panel-head">
+            <h2>Open service requests</h2>
+            <a class="b b--ghost b--sm" href="requests.html"><span>View all</span></a>
+          </div>
+          <div class="panel-body panel-body--flush">
+            <table class="table">
+              <thead>
+                <tr><th>Request</th><th>Area</th><th>Status</th><th>Updated</th><th></th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><span class="ref">HG-2026-117</span><br><a class="title" href="request.html">Roof &amp; gutter works — east wing</a></td>
+                  <td class="u-mute">Exterior</td>
+                  <td><span class="chip chip--approval">Awaiting approval</span></td>
+                  <td class="u-mute num">11 Aug</td>
+                  <td class="u-right"><a class="b b--ghost b--sm" href="request.html"><span>Open</span></a></td>
+                </tr>
+                <tr>
+                  <td><span class="ref">HG-2026-115</span><br><a class="title" href="request.html">Pool plant service</a></td>
+                  <td class="u-mute">Grounds</td>
+                  <td><span class="chip chip--scheduled">Scheduled</span></td>
+                  <td class="u-mute num">9 Aug</td>
+                  <td class="u-right"><a class="b b--ghost b--sm" href="request.html"><span>Open</span></a></td>
+                </tr>
+                <tr>
+                  <td><span class="ref">HG-2026-114</span><br><a class="title" href="request.html">Cellar humidity control</a></td>
+                  <td class="u-mute">Interior</td>
+                  <td><span class="chip chip--progress">In progress</span></td>
+                  <td class="u-mute num">7 Aug</td>
+                  <td class="u-right"><a class="b b--ghost b--sm" href="request.html"><span>Open</span></a></td>
+                </tr>
+                <tr>
+                  <td><span class="ref">HG-2026-113</span><br><a class="title" href="request.html">Spring garden programme</a></td>
+                  <td class="u-mute">Grounds</td>
+                  <td><span class="chip chip--progress">In progress</span></td>
+                  <td class="u-mute num">5 Aug</td>
+                  <td class="u-right"><a class="b b--ghost b--sm" href="request.html"><span>Open</span></a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- right column -->
+        <div style="display:grid;gap:clamp(.9rem,1.6vw,1.4rem)">
+
+          <section class="panel quote-card">
+            <div class="panel-head">
+              <h2>Awaiting your decision</h2>
+              <span class="chip chip--approval">1</span>
+            </div>
+            <div class="panel-body">
+              <p class="u-tiny" style="margin-bottom:.4rem">HG-2026-117 · Issued 11 August</p>
+              <h3 style="font-size:1.05rem">Roof &amp; gutter works — east wing</h3>
+              <p class="u-mute" style="margin-top:.6rem;font-size:.88rem">
+                Replacement of two corroded gutter runs, re-bedding of ridge capping and
+                installation of leaf guards ahead of spring.
+              </p>
+              <div class="quote-total" style="border-top:1px solid rgba(154,123,79,.28);margin-top:1rem">
+                <span class="u-tiny">Total incl. GST</span>
+                <span class="amount">$4,860</span>
+              </div>
+              <a class="b b--brass" href="request.html" style="width:100%;margin-top:1rem"><span>Review quote</span></a>
+            </div>
+          </section>
+
+          <section class="panel">
+            <div class="panel-head"><h2>Upcoming</h2></div>
+            <div class="panel-body">
+              <ul class="timeline">
+                <li class="is-key">
+                  <time>Mon 19 August · 8:30am</time>
+                  <strong>Pool plant service</strong>
+                  <p>Aquaform Pools · attending with estate manager</p>
+                </li>
+                <li>
+                  <time>Thu 22 August</time>
+                  <strong>Garden programme — stage two</strong>
+                  <p>Hedging, mulching and irrigation check</p>
+                </li>
+                <li>
+                  <time>Mon 1 September · 10:00am</time>
+                  <strong>Monthly property inspection</strong>
+                  <p>Thomas Ashby · report issued within 48 hours</p>
+                </li>
+                <li>
+                  <time>Mid September</time>
+                  <strong>Insurance schedule renewal</strong>
+                  <p>Documents will be uploaded for your records</p>
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <section class="panel">
+            <div class="panel-head">
+              <h2>From your estate manager</h2>
+              <a class="b b--ghost b--sm" href="messages.html"><span>Open</span></a>
+            </div>
+            <div class="panel-body">
+              <p class="u-tiny" style="margin-bottom:.4rem">Thomas Ashby · 11 August, 4:12pm</p>
+              <p class="u-mute" style="font-size:.9rem">
+                “The roofer attended this morning and the quote is now with you. Nothing is urgent —
+                the east gutter has another season in it — but I would recommend the works before
+                the spring rain.”
+              </p>
+            </div>
+          </section>
+
+        </div>
+      </div>
+
+      <p class="demo-note">
+        Demonstration data. Every figure, request and document shown here is illustrative —
+        the live portal is populated from your own records.
+      </p>
+
+    </div>
+  </div>
+</div>
+
+<!-- new request modal -->
+<div class="modal" id="new-request" hidden>
+  <div class="modal-card">
+    <div class="panel-head">
+      <h2>New service request</h2>
+      <button class="b b--ghost b--sm" data-modal-close><span>Close</span></button>
+    </div>
+    <form class="panel-body" data-new-request>
+      <div class="field">
+        <label for="r-title">What needs attention?</label>
+        <input id="r-title" name="title" type="text" placeholder="e.g. Hall light flickering" required>
+      </div>
+      <div class="field-row">
+        <div class="field">
+          <label for="r-area">Area</label>
+          <select id="r-area" name="area">
+            <option>Interior</option><option>Exterior</option><option>Grounds</option>
+            <option>Services &amp; plant</option><option>Security</option><option>Other</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="r-priority">Priority</label>
+          <select id="r-priority" name="priority">
+            <option>Routine</option><option>Soon</option><option>Urgent</option>
+          </select>
+        </div>
+      </div>
+      <div class="field">
+        <label for="r-detail">Detail</label>
+        <textarea id="r-detail" name="detail" placeholder="Anything that will help us attend properly the first time."></textarea>
+      </div>
+      <div class="field">
+        <label>Photographs (optional)</label>
+        <div class="drop" data-drop data-drop-list="#new-req-files">
+          <strong>Drop photographs here</strong><br>
+          <span style="font-size:.78rem">or click to browse · JPG, PNG, HEIC, PDF</span>
+          <input type="file" multiple hidden>
+        </div>
+        <ul class="files" id="new-req-files"></ul>
+      </div>
+      <div style="display:flex;gap:.7rem;justify-content:flex-end;margin-top:.4rem">
+        <button type="button" class="b b--ghost" data-modal-close><span>Cancel</span></button>
+        <button type="submit" class="b b--solid"><span>Submit request</span></button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script src="../assets/portal.js"></script>
+</body>
+</html>

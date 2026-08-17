@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Service Requests — Holland &amp; Gray Portal</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Jost:wght@200;300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/portal.css">
+</head>
+<body>
+
+<div class="shell">
+
+  <aside class="rail">
+    <a class="rail-brand" href="dashboard.html">
+      <span class="mark">HOLLAND &amp; GRAY</span>
+      <span class="sub">Private Client Portal</span>
+    </a>
+    <div class="rail-group">
+      <h4>Estate</h4>
+      <nav>
+        <a href="dashboard.html">Estate Overview</a>
+        <a href="property.html">Property Information</a>
+        <a href="history.html">Maintenance History</a>
+      </nav>
+    </div>
+    <div class="rail-group">
+      <h4>Service</h4>
+      <nav>
+        <a href="requests.html" aria-current="page">Service Requests <span class="rail-count">4</span></a>
+        <a href="request.html">Quotes &amp; Approvals <span class="rail-count">1</span></a>
+        <a href="documents.html">Documents &amp; Records</a>
+        <a href="messages.html">Messages <span class="rail-count">2</span></a>
+      </nav>
+    </div>
+    <div class="rail-foot">
+      <p class="u-tiny" style="color:rgba(243,240,234,.34);margin-bottom:.8rem">Your estate manager</p>
+      <div class="rail-manager">
+        <span class="avatar">TA</span>
+        <span><strong>Thomas Ashby</strong><span>Level II · Estate</span></span>
+      </div>
+      <p style="margin-top:1.1rem"><a href="index.html" style="font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:rgba(243,240,234,.45);text-decoration:none">Sign out</a></p>
+    </div>
+  </aside>
+
+  <div class="main">
+
+    <div class="topbar">
+      <div style="display:flex;align-items:center;gap:1rem">
+        <button class="rail-toggle" aria-label="Menu"><span></span><span></span></button>
+        <div class="topbar-title">
+          <h1>Service Requests</h1>
+          <p>18 Lansell Road, Toorak</p>
+        </div>
+      </div>
+      <div class="topbar-actions">
+        <button class="b b--solid" data-modal-open="new-request"><span>New request</span></button>
+      </div>
+    </div>
+
+    <div class="content">
+
+      <!-- workflow legend -->
+      <section class="panel">
+        <div class="panel-head"><h2>How a request travels</h2></div>
+        <div class="panel-body">
+          <ol class="track">
+            <li class="done">New <span>Received &amp; acknowledged</span></li>
+            <li class="done">In Progress <span>Assessed, trade arranged</span></li>
+            <li class="now">Awaiting Approval <span>Quote with you</span></li>
+            <li>Scheduled <span>Date confirmed</span></li>
+            <li>Completed <span>Signed off &amp; recorded</span></li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="panel">
+        <div class="panel-head">
+          <div style="display:flex;align-items:center;gap:1rem;flex-wrap:wrap">
+            <h2>All requests</h2>
+            <span class="u-tiny" data-filter-count>9 requests</span>
+          </div>
+          <div class="filters" data-filters>
+            <button class="is-on" data-filter="all">All</button>
+            <button data-filter="new">New</button>
+            <button data-filter="progress">In progress</button>
+            <button data-filter="approval">Awaiting approval</button>
+            <button data-filter="scheduled">Scheduled</button>
+            <button data-filter="complete">Completed</button>
+          </div>
+        </div>
+
+        <div class="panel-body panel-body--flush">
+          <table class="table">
+            <thead>
+              <tr><th>Request</th><th>Area</th><th>Status</th><th>Updated</th><th></th></tr>
+            </thead>
+            <tbody data-request-rows>
+              <tr data-status="approval">
+                <td><span class="ref">HG-2026-117</span><br><a class="title" href="request.html">Roof &amp; gutter works — east wing</a></td>
+                <td class="u-mute">Exterior</td>
+                <td><span class="chip chip--approval">Awaiting approval</span></td>
+                <td class="u-mute num">11 Aug 2026</td>
+                <td class="u-right"><a class="b b--ghost b--sm" href="request.html"><span>Open</span></a></td>
+              </tr>
+              <tr data-status="scheduled">
+                <td><span class="ref">HG-2026-115</span><br><a class="title" href="request.html">Pool plant service</a></td>
+                <td class="u-mute">Grounds</td>
+                <td><span class="chip chip--scheduled">Scheduled</span></td>
+                <td class="u-mute num">9 Aug 2026</td>
+                <td class="u-right"><a class="b b--ghost b--sm" href="request.html"><span>Open</span></a></td>
+              </tr>
+              <tr data-status="progress">
+                <td><span class="ref">HG-2026-114</span><br><a class="title" href="request.html">Cellar humidity control</a></td>
+                <td class="u-mute">Interior</td>
+                <td><span class="chip chip--progress">In progress</span></td>
+                <td class="u-mute num">7 Aug 2026</td>
+                <td class="u-right"><a class="b b--ghost b--sm" href="request.html"><span>Open</span></a></td>
+              </tr>
+              <tr data-status="progress">
+                <td><span class="ref">HG-2026-113</span><br><a class="title" href="request.html">Spring garden programme</a></td>
+                <td class="u-mute">Grounds</td>
+                <td><span class="chip chip--progress">In progress</span></td>
+                <td class="u-mute num">5 Aug 2026</td>
+                <td class="u-right"><a class="b b--ghost b--sm" href="request.html"><span>Open</span></a></td>
+              </tr>
+              <tr data-status="complete">
+                <td><span class="ref">HG-2026-111</span><br><a class="title" href="request.html">Front gate motor replacement</a></td>
+                <td class="u-mute">Security</td>
+                <td><span class="chip chip--complete">Completed</span></td>
+                <td class="u-mute num">29 Jul 2026</td>
+                <td class="u-right"><a class="b b--ghost b--sm" href="request.html"><span>Open</span></a></td>
+              </tr>
+              <tr data-status="complete">
+                <td><span class="ref">HG-2026-109</span><br><a class="title" href="request.html">Ducted heating service — both zones</a></td>
+                <td class="u-mute">Services &amp; plant</td>
+                <td><span class="chip chip--complete">Completed</span></td>
+                <td class="u-mute num">22 Jul 2026</td>
+                <td class="u-right"><a class="b b--ghost b--sm" href="request.html"><span>Open</span></a></td>
+              </tr>
+              <tr data-status="complete">
+                <td><span class="ref">HG-2026-106</span><br><a class="title" href="request.html">Marble hearth stain removal</a></td>
+                <td class="u-mute">Interior</td>
+                <td><span class="chip chip--complete">Completed</span></td>
+                <td class="u-mute num">14 Jul 2026</td>
+                <td class="u-right"><a class="b b--ghost b--sm" href="request.html"><span>Open</span></a></td>
+              </tr>
+              <tr data-status="complete">
+                <td><span class="ref">HG-2026-104</span><br><a class="title" href="request.html">Window cleaning — full residence</a></td>
+                <td class="u-mute">Exterior</td>
+                <td><span class="chip chip--complete">Completed</span></td>
+                <td class="u-mute num">3 Jul 2026</td>
+                <td class="u-right"><a class="b b--ghost b--sm" href="request.html"><span>Open</span></a></td>
+              </tr>
+              <tr data-status="complete">
+                <td><span class="ref">HG-2026-101</span><br><a class="title" href="request.html">Cellar cooling unit — annual service</a></td>
+                <td class="u-mute">Services &amp; plant</td>
+                <td><span class="chip chip--complete">Completed</span></td>
+                <td class="u-mute num">18 Jun 2026</td>
+                <td class="u-right"><a class="b b--ghost b--sm" href="request.html"><span>Open</span></a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <p class="demo-note">
+        Demonstration data. Filters above are live — select a status to see the list respond.
+      </p>
+
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="new-request" hidden>
+  <div class="modal-card">
+    <div class="panel-head">
+      <h2>New service request</h2>
+      <button class="b b--ghost b--sm" data-modal-close><span>Close</span></button>
+    </div>
+    <form class="panel-body" data-new-request>
+      <div class="field">
+        <label for="r-title">What needs attention?</label>
+        <input id="r-title" name="title" type="text" placeholder="e.g. Hall light flickering" required>
+      </div>
+      <div class="field-row">
+        <div class="field">
+          <label for="r-area">Area</label>
+          <select id="r-area" name="area">
+            <option>Interior</option><option>Exterior</option><option>Grounds</option>
+            <option>Services &amp; plant</option><option>Security</option><option>Other</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="r-priority">Priority</label>
+          <select id="r-priority" name="priority">
+            <option>Routine</option><option>Soon</option><option>Urgent</option>
+          </select>
+        </div>
+      </div>
+      <div class="field">
+        <label for="r-detail">Detail</label>
+        <textarea id="r-detail" name="detail" placeholder="Anything that will help us attend properly the first time."></textarea>
+      </div>
+      <div class="field">
+        <label>Photographs (optional)</label>
+        <div class="drop" data-drop data-drop-list="#new-req-files">
+          <strong>Drop photographs here</strong><br>
+          <span style="font-size:.78rem">or click to browse · JPG, PNG, HEIC, PDF</span>
+          <input type="file" multiple hidden>
+        </div>
+        <ul class="files" id="new-req-files"></ul>
+      </div>
+      <div style="display:flex;gap:.7rem;justify-content:flex-end;margin-top:.4rem">
+        <button type="button" class="b b--ghost" data-modal-close><span>Cancel</span></button>
+        <button type="submit" class="b b--solid"><span>Submit request</span></button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script src="../assets/portal.js"></script>
+</body>
+</html>
